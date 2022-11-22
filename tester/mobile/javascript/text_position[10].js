@@ -1,1 +1,0 @@
-﻿positionForPages[10]={page:10,positions:[{word:"Tabungan",left:0.078464,top:0.689643,width:0.327537,height:0.085522},{word:"09",left:0.004282,top:0.973516,width:0.038906,height:0.023756}]};

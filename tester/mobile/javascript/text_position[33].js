@@ -1,1 +1,0 @@
-﻿positionForPages[33]={page:33,positions:[{word:"Dita",left:0.693478,top:0.331999,width:0.060577,height:0.035634},{word:"Dani",left:0.792932,top:0.671414,width:0.065616,height:0.035634},{word:"32",left:0.957243,top:0.973565,width:0.038906,height:0.023756}]};

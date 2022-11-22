@@ -1,1 +1,0 @@
-﻿positionForPages[31]={page:31,positions:[{word:"Tentang Kami",left:0.070582,top:0.681964,width:0.573769,height:0.106902},{word:"Halo Kawan Semuaaa!",left:0.164531,top:0.853683,width:0.269970,height:0.028507},{word:"Kami Redaksi Skensa Pas Magz. Yuk Kenalan sama kami !",left:0.164531,top:0.893065,width:0.684999,height:0.028507}]};

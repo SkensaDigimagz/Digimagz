@@ -1,1 +1,0 @@
-﻿positionForPages[32]={page:32,positions:[{word:"Jagat",left:0.894148,top:0.287692,width:0.081088,height:0.035634},{word:"Ridho",left:0.228338,top:0.322324,width:0.080131,height:0.035634},{word:"Hamdan",left:0.066079,top:0.644736,width:0.114955,height:0.035634},{word:"31",left:0.007255,top:0.973565,width:0.038906,height:0.023756}]};

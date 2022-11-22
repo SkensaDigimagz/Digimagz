@@ -1,101 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="animate_animated animate__fadeInDown">
-        <a href="http://www.smkn1-pasuruan.sch.id/" target="_blank">
-        <img src="assets/Slide 1/logo.png" class="logo" style="width: 60px;">
-        </a>
-        <ul>
-            <li>
-                <a href="#memekReva" class="aktif">Home</a>
-            </li>
-        </ul>
+      <a href="http://www.smkn1-pasuruan.sch.id/" target="_blank">
+        <img src="assets/Slide 1/logo.png" class="logo" style="width: 60px" />
+      </a>
+      <a href="http://maspionsquare.co.id" target="_blank">
+        <img
+          src="assets/Slide 1/Logo Maspion Transparan (1).png"
+          class="maspion"
+          style="width: 100px"
+          alt=""
+        />
+      </a>
     </header>
     <section>
-        <img src="assets/Slide 1/langit.png"  id="background">
-        <img src="assets/Slide 1/borobudur.png" id="gunung1">
-        <img src="assets/Slide 1/judul.png" style="width: 700px;" id="acro">
-        <a href="#lanjut" id="btn">Download Now</a>
-        <img src="assets/Slide 1/Gedung.png" style="width: 100%;" id="gunung2">
-        <img src="assets/Slide 1/gradasi.png" style="width: 100%; " id="gradasi">
+      <img src="assets/Slide 1/langit.png" id="background" />
+      <img src="assets/Slide 1/borobudur.png" id="gunung1" />
+      <img src="assets/Slide 1/judul.png" style="width: 700px" id="acro" />
+      <a href="#" id="btn">Download Now</a>
+      <audio
+        id="myAudio"
+        src="assets/music/melodyloops-preview-innovation-and-technology-5m0s.mp3"
+        preload="auto"
+      ></audio>
+      <img src="assets/Slide 1/Gedung.png" style="width: 100%" id="gunung2" />
+      <img src="assets/Slide 1/gradasi.png" style="width: 100%" id="gradasi" />
+      <img
+        src="assets/Slide 1/angin_.gif"
+        style="width: 100%; mix-blend-mode: screen"
+        id="angin"
+      />
+      <a onClick="togglePlay()" id="music"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-volume-up-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"
+          />
+          <path
+            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"
+          />
+          <path
+            d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"
+          /></svg
+      ></a>
     </section>
     <section id="lanjut">
-        <img src="assets/Slide 2/bg.png" style="width: 100%;" id="page2">
-        <img src="assets/Slide 2/awan.png" style="width: 100%;" id="awan">
-        <img src="assets/Slide 2/VR.png" style="width: 100%; margin-bottom: 10px;" id="vr">
-        <img src="assets/Slide 2/gif pnp-p40jrm1t7hl091o6mibn95a4.gif" style="margin-top: 10px; mix-blend-mode: screen; " id="logokon">
+      <img src="assets/Slide 2/bg.png" style="width: 100%" id="page2" />
+      <img src="assets/Slide 2/awan.png" style="width: 100%" id="awan" />
+      <img
+        src="assets/Slide 2/gif pnp-p40jrm1t7hl091o6mibn95a4.gif"
+        style="margin-top: 10px; mix-blend-mode: screen"
+        id="logokon"
+      />
+      <img
+        src="assets/Slide 2/slide 2.gif"
+        style="margin-top: 10px; mix-blend-mode: screen"
+        id="giftt"
+      />
+      <img
+        src="assets/Slide 2/VR.png"
+        style="width: 100%; margin-bottom: 10px"
+        id="vr"
+      />
     </section>
     <section>
-        <img src="assets/Slide 3/bg bawah.png" style="height: 100%;" id="bg3bawah">
-        <img src="assets/Slide 3/bg.png" style="height: 100%; " id="bg3">
-        <img src="assets/Slide 3/text.png" style="height: 100%;" id="text2">
-        <a href="tester/majalah.html" id="openflip">OpenThe Magazine</a>
-        
-        <div   style=" margin-left: 125px; margin-top: 100px; text-align: justify; z-index: 9;">
-             <p style="color: white;">Berasal dari kata Acropolis  (kota ketinggian) dan technology (teknologi). digabung menjadi Acro Poltech yang berarti bersatunya seluruh simbol pusat kota dalam negeri yang dikoneksikan oleh kecanggihan teknologi menuju Society 5.0 guna peradaban yang damai .</p>
-             <p style="color: white; ">Mengangkat konsep Metavers dengan judul Acro Poltech yang bermakna bersatunya seluruh simbol pusat kota dalam negeri yang dikoneksikan oleh kecanggihan teknologi menuju Society 5.0 guna peradaban yang damai. 
-                Alasan mengangkat metavers sebagai konsep majalah digital kami karena ambisi kami untuk mewujudkan kemudahan layanan digital di masa yang akan datang. .</p>
-                <p style="color: white; ">
-                motivasi mengangkat nama Acro Poltech dalam majalah kita ini karena berkaca dengan kondisi pandemi kemarin, yang tanpa disadari kita telah memperkuat peradaban Revolusi Industri 4.0 dan mendorong Society 5.0 di Indonesia. Hal ini dapat kita lihat dari berbagai sektor yang bersinergi dan bekerjasama demi kelancaran kegiatan di segala bidang.
-                Dengan kondisi pandemic seperti kemarin, segala sektor dan seluruh masyarakat mau tidak mau harus menyesuaikan kondisi yang ada agar kegiatan dapat tetap berjalan dengan mengacu pada kemajuan teknologi. Dengan hal ini ternyata sudah mendukung Indonesia untuk menuju Society 5.0</p>
-        </div>
-        <a href="https://www.google.com"  target="_blank" id="book" style=" display: inline-block;">
-            <img src="assets/Slide 3/Gif/gift cover'.gif" style="width: 550px; margin-top: 60px; height: 550px; mix-blend-mode: screen; left: -50px; z-index: 10;" id="gift">
-        </a>
+      <img
+        src="assets/Slide 3/bg bawah.png"
+        style="height: 100%"
+        id="bg3bawah"
+      />
+      <img src="assets/Slide 3/bg.png" style="height: 100%" id="bg3" />
+      <img src="assets/Slide 3/text.png" style="height: 100%" id="text2" />
+      <a href="FlipBook/index.html" id="openflip">OpenThe Magazine</a>
+
+      <div
+        style="
+          margin-left: 125px;
+          margin-top: 100px;
+          text-align: justify;
+          z-index: 9;
+        "
+      >
+        <p style="color: white">
+          Berasal dari kata Acropolis (kota ketinggian) dan technology
+          (teknologi). digabung menjadi Acro Poltech yang berarti bersatunya
+          seluruh simbol pusat kota dalam negeri yang dikoneksikan oleh
+          kecanggihan teknologi menuju Society 5.0 guna peradaban yang damai .
+        </p>
+        <p style="color: white">
+          Mengangkat konsep Metavers dengan judul Acro Poltech yang bermakna
+          bersatunya seluruh simbol pusat kota dalam negeri yang dikoneksikan
+          oleh kecanggihan teknologi menuju Society 5.0 guna peradaban yang
+          damai. Alasan mengangkat metavers sebagai konsep majalah digital kami
+          karena ambisi kami untuk mewujudkan kemudahan layanan digital di masa
+          yang akan datang. .
+        </p>
+        <p style="color: white">
+          motivasi mengangkat nama Acro Poltech dalam majalah kita ini karena
+          berkaca dengan kondisi pandemi kemarin, yang tanpa disadari kita telah
+          memperkuat peradaban Revolusi Industri 4.0 dan mendorong Society 5.0
+          di Indonesia. Hal ini dapat kita lihat dari berbagai sektor yang
+          bersinergi dan bekerjasama demi kelancaran kegiatan di segala bidang.
+          Dengan kondisi pandemic seperti kemarin, segala sektor dan seluruh
+          masyarakat mau tidak mau harus menyesuaikan kondisi yang ada agar
+          kegiatan dapat tetap berjalan dengan mengacu pada kemajuan teknologi.
+          Dengan hal ini ternyata sudah mendukung Indonesia untuk menuju Society
+          5.0
+        </p>
+      </div>
+      <a
+        href="https://www.google.com"
+        target="_blank"
+        id="book"
+        style="display: inline-block"
+      >
+        <img
+          src="assets/Slide 3/Gif/gift cover'.gif"
+          style="
+            width: 550px;
+            margin-top: 60px;
+            height: 550px;
+            mix-blend-mode: screen;
+            left: -50px;
+            z-index: 10;
+          "
+          id="gift"
+        />
+      </a>
     </section>
+    <footer
+      style="background: linear-gradient(to bottom, #1c0522, transparent)"
+    >
+      <div class=".container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="    " style="color: white">Tentang kami</h2>
+            <a
+              href="https://www.instagram.com/indrarobbik/"
+              target="_blank"
+              style="text-decoration: none; color: azure"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              M. Rounaq I.R</a
+            >
+            <br />
+            <a
+              href="https://www.instagram.com/princsaol/"
+              target="_blank"
+              style="text-decoration: none; color: azure"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              Aulia
+            </a>
+            <br />
+            <a
+              href="https://www.instagram.com/brian.aristya_/"
+              target="_blank"
+              style="text-decoration: none; color: azure"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              Brian lazward aristya abadi</a
+            >
+            <br />
+            <a
+              href="https://www.instagram.com/atoilahp/"
+              target="_blank"
+              style="text-decoration: none; color: azure"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              Mukhamad Ato'illah Putra</a
+            >
+            <br />
+            <a href="#" style="text-decoration: none; color: azure"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              Aldi</a
+            >
+            <div class="row">
+              <div class="col">
+                <a
+                  href="Team.html"
+                  style="text-decoration: none"
+                  class="text-white-50"
+                >
+                  <h2>Team Digimagz</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <h2 style="color: white">Contact</h2>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-white"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label text-white"
+                >Kritik dan saran</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- animation -->
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-    <script>
-        let background = document.getElementById('background');
-        let gunung1 = document.getElementById('gunung1');
-        let acro = document.getElementById('acro');
-        let btn = document.getElementById('btn');
-        let gunung2 = document.getElementById('gunung2');
-        // let gradasi = document.getElementById('gradasi');
-        let header = document.querySelector('header');
+    <script type="text/javascript">
+      var myAudio = document.getElementById("myAudio");
+      var isPlaying = false;
 
-
-        window.addEventListener('scroll', function () {
-            let value = window.scrollY;
-            background.style.right = value*0.25 + 'px';
-            gunung2.style.top = value*0.5 + 'px';
-            gradasi.style.bottom = value*0.1 + 'px';
-            gunung1.style.top = value*0+ 'px';
-            acro.style.Top = value*4 + 'px';
-            acro.style.marginTop = value*1.5 + 'px';
-            btn.style.marginTop = value*2 + 'px';
-            header.style.top = value  * 0.5 +'px';
-        })
-
-
-        const element = document.getElementById("lanjut");
-        element.scrollIntoView();
+      function togglePlay() {
+        if (isPlaying) {
+          myAudio.pause();
+        } else {
+          myAudio.play();
+        }
+      }
+      myAudio.onplaying = function () {
+        isPlaying = true;
+      };
+      myAudio.onpause = function () {
+        isPlaying = false;
+      };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
+
+    <script>
+      let background = document.getElementById("background");
+      let gunung1 = document.getElementById("gunung1");
+      let acro = document.getElementById("acro");
+      let btn = document.getElementById("btn");
+      let music = document.getElementById("music");
+      let gunung2 = document.getElementById("gunung2");
+      // let gradasi = document.getElementById('gradasi');
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        background.style.right = value * 0.25 + "px";
+        gunung2.style.top = value * 0.5 + "px";
+        gradasi.style.bottom = value * 0.1 + "px";
+        gunung1.style.top = value * 0 + "px";
+        acro.style.Top = value * 4 + "px";
+        acro.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 2 + "px";
+        music.style.marginTop = value * 2 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+
+      const element = document.getElementById("lanjut");
+      element.scrollIntoView();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

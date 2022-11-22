@@ -1,1 +1,0 @@
-﻿positionForPages[29]={page:29,positions:[{word:"MASPION IT",left:0.530045,top:0.040394,width:0.325939,height:0.039198},{word:"ISWA KOMPUTER",left:0.101594,top:0.930857,width:0.452158,height:0.039198}]};
