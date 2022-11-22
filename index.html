@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            Logo
+        </a>
+        <ul>
+            <li>
+                <a href="#memekReva" class="aktif">Home</a>
+            </li>
+            <li>
+                <a href="#memek">About</a>
+            </li>
+            <li>
+                <a href="#memek">Work</a>
+            </li>
+            <li>
+                <a href="#memek">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <img src="assets/Slide 1/langit.png" id="background">
+        <img src="assets/Slide 1/borobudur.png" id="gunung1">
+        <img src="assets/Slide 1/judul.png" id="acro">
+        <!-- <a href="#sec" id="btn">Explore</a> -->
+        <img src="assets/Slide 1/Gedung.png" id="gunung2">
+    </section>
+
+    <section>
+        <img src="assets/Slide 2/bg.png" id="bg2">
+        <img src="assets/Slide 2/VR.png">
+    </section>
+    <section>
+        <img src="assets/Slide 3/bg.png id="bg2">
+        <img src="assets/Slide 3/text.png">
+    </section>
+    
+    <script>
+        let background = document.getElementById('background');
+        let gunung1 = document.getElementById('gunung1');
+        let acro = document.getElementById('acro');
+        let btn = document.getElementById('btn');
+        let gunung2 = document.getElementById('gunung2');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            background.style.left = value*0.25 + 'px';
+            gunung2.style.top = value*0.5 + 'px';
+            gunung1.style.top = value*0+ 'px';
+            acro.style.Top = value*4 + 'px';
+            acro.style.marginTop = value*1.5 + 'px';
+            btn.style.marginTop = value*1.5 + 'px';
+            header.style.top = value  * 0.5 +'px';
+        })
+    </script>
+</body>
+</html>
