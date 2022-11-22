@@ -1,0 +1,1 @@
+﻿positionForPages[27]={page:27,positions:[{word:"MASPION IT",left:0.683729,top:0.019504,width:0.306185,height:0.036822},{word:"ASTROTECH",left:0.129356,top:0.954817,width:0.327999,height:0.039197}]};

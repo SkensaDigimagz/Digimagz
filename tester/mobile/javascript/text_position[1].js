@@ -1,0 +1,1 @@
+﻿positionForPages[1]={page:1,positions:[{word:"Your ",left:0.049527,top:0.253907,width:0.137321,height:0.042824},{word:"T R U E !",left:0.047407,top:0.375123,width:0.255749,height:0.049731},{word:"DREAM",left:0.041710,top:0.292040,width:0.257784,height:0.049731},{word:"Came",left:0.045167,top:0.335617,width:0.155652,height:0.042824}]};

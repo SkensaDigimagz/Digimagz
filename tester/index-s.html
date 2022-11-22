@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Basic Resposive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+  <script>
+
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    m = checkTime(m);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+  }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+  </script>
+  
+</head>
+<body onload="startTime()">
+  <img src="logo.png" class="logo">
+  <div id="txt" class="container"></div>
+  <img src="tengah.gif" class="ha">
+<a href="bse.html"><img src="bse.png" class="iban">
+
+<img src="pjk.gif" class="pjk">
+<a href="galeri.html"><img src="galeri.png" class="iso"></a>
+
+<a href="http://www.smkn1-pasuruan.sch.id/"><img src="logo1.png" class="smk"></a>
+<a href="majalah.html"><img src="cover.png" class="cvr"></a>
+
+<img src="musik.png" class="imus">
+
+<audio id="myAudio" src="melodyloops-preview-innovation-and-technology-5m0s.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()"><button type="button" class="bmus"></button></a>
+
+
+<script type="text/javascript">
+  var myAudio = document.getElementById("myAudio");
+ var isPlaying = false;
+ 
+ function togglePlay() {
+   if (isPlaying) {
+     myAudio.pause()
+   } else {
+     myAudio.play();
+   }
+ };
+ myAudio.onplaying = function() {
+   isPlaying = true;
+ };
+ myAudio.onpause = function() {
+   isPlaying = false;
+ };
+ </script>
+
+</body>
+</html>

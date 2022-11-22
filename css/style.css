@@ -93,7 +93,7 @@ section img#gunung2{
     z-index: 9;
 }
 
-section::before{
+/* section::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -101,7 +101,7 @@ section::before{
     height: 100px;
     background: linear-gradient(to top, #1c0522, tran sparent);
     z-index: 1000;
-}
+} */
 
 #text{
     position: absolute;
@@ -113,24 +113,31 @@ section::before{
 #btn {
     z-index: 8;
     text-decoration: none;
-    padding: 8px 25px;
+    padding: 1px 30px;
     border-radius: 40px;
     background: #ffff;
     color: #2b1055;
-    font-size: 1.5em;
+    font-size: 19px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    
 
     display: inline-block;
     transform: translateY(140px);
 }
 
-section img#bg2{
+/* section img#bg2{
     max-width: 100%;
     height: auto;
 }
 section img#vr{
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* .sec {
     position: relative;
@@ -147,4 +154,30 @@ section img#vr{
  .page3 p{
     font-size: 1.2em;
     color: #ffff;
-} 
+}  
+
+#openflip {
+    z-index: 10;
+    text-decoration: none;
+    text-align: center;
+    padding: 1px 50px;
+    border-radius: 40px;
+    background: #ffff;
+    color: #2b1055;
+
+
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+    
+    
+    display: inline-block;
+    margin-left: 45px;
+    transform: translateY(180px);
+}
