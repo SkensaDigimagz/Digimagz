@@ -12,7 +12,6 @@ body {
     background: linear-gradient(#2b1055, #7597de);
     overflow-x: hidden;
 }
-
 header{
     position: absolute;
     top: 0;
@@ -24,44 +23,12 @@ header{
     align-items: center;
     z-index: 10000;
 }
-/* header .logo {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */
-
 header a .logo {
     margin-left: -60px;
 }
 header a .maspion {
     margin-right: -60px;
 }
-
-header ul {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-right: -70px;
-}
-header ul li {
-    list-style: none;
-    margin-left: 20px;
-}
-header ul li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #ffff;
-    border-radius: 20px;
-}
-
-header ul li a:hover,header ul li a:hover.aktif{
-    background: #ffff;
-    color: #2b1055;
-}
-
 section{
     position: relative;
     width: 100%;
@@ -153,31 +120,7 @@ section::before{
 
     display: inline-block;
     transform: translateY(130px);
-    /* transform: translateX(-690px); */
 }
-
-
-/* section img#bg2{
-    max-width: 100%;
-    height: auto;
-}
-section img#vr{
-    max-width: 100%;
-    height: auto;
-} */
-
-/* .sec {
-    position: relative;
-    padding: 100px;
-    background: #1c0522;
-}
-
-.sec h2{
-    font-size: 3.53em;
-    margin-bottom: 10px;
-    color: #ffff;
-}
-*/
  .page3 p{
     font-size: 1.2em;
     color: #ffff;
@@ -254,4 +197,165 @@ footer{
 
     display: inline-block;
     transform: translateY(-120px);
+}
+@media (orientation: portrait) {
+    header a .logo {
+        margin-left: -90px;
+        width: 5px;
+    }
+
+    header a .maspion {
+        margin-right: -90px;
+    }
+
+    section img#background {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#gunung1 {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#acro {
+        left: -140px;
+        width: 100px;
+        height: 100px;
+        transform: translateY(250px);
+    }
+
+    section img#gunung2 {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#gradasi {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#angin {
+        width: auto;
+        height: 100vh;
+    }
+
+    #btn {
+        z-index: 7;
+        margin-left: 15px;
+        text-decoration: none;
+        padding: 1px 15px;
+        border-radius: 40px;
+        background: #ffff;
+        color: #2b1055;
+        font-size: 15px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+
+        display: inline-block;
+        transform: translateY(-50px);
+    }
+
+    #music {
+        position: relative;
+        z-index: 8;
+        margin-left: 10px;
+        text-decoration: none;
+        padding: 1px 10px;
+        border-radius: 40px;
+        background: #ffff;
+        color: #2b1055;
+        font-size: 15px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+
+        display: inline-block;
+        transform: translateY(-50px);
+    }
+
+    section img#page2 {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#awan {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#logokon {
+        /* right: -900px; */
+        left: -140px;
+        width: 700px;
+        height: 700px;
+        transform: translateY(100px);
+    }
+
+    section img#giftt {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#vr {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#bg3bawah {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#bg3 {
+        width: auto;
+        height: 100vh;
+    }
+
+    section img#text2 {
+        width: 0px;
+        height: 0px;
+    }
+
+    #openflip {
+        z-index: 10;
+        text-decoration: none;
+        text-align: center;
+        padding: 1px 50px;
+        border-radius: 40px;
+        background: #ffff;
+        color: #2b1055;
+
+
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+
+
+        display: inline-block;
+        margin-left: 280px;
+        transform: translateY(250px);
+    }
+
+    section img#gift {
+        top: 130px;
+        width: 500px;
+        height: 500px;
+    }
+
 }
