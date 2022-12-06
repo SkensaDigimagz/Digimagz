@@ -767,7 +767,7 @@ footer{
         transform: translateY(-130px);
     }
 }
-@media (min-width: 992px) and (max-width:1200px ){
+@media (min-width: 992px) and (max-width:1250px ){
     header a .logo {
         margin-left: -60px;
         width: 60px;
@@ -957,7 +957,7 @@ footer{
         transform: translateY(-130px);
     }
 }
-@media (min-width: 1200px) and (max-width:1400px ){
+@media (min-width: 1250px) and (max-width:1900px ){
     header a .logo {
         margin-left: -60px;
         width: 80px;
