@@ -960,20 +960,20 @@ footer{
 @media (min-width: 1250px) and (max-width:1600px ){
     header a .logo {
         margin-left: -60px;
-        width: 80px;
+        width: 60px;
         
     }
     header a .maspion {
         margin-right: -60px;
-        width: 120px;
+        width: 100px;
     }
     section img#gunung1 {
         width: 100vw;
         height: 100vh;
     }
     section img#acro{
-        width: 800px;
-        height: 800px;
+        width: 700px;
+        height: 700px;
         left : 25%;
         transform: translateY(-90px);
     }
@@ -997,7 +997,7 @@ footer{
         border-radius: 40px;
         background: #ffff;
         color: #2b1055;
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
@@ -1018,7 +1018,7 @@ footer{
         border-radius: 40px;
         background: #ffff;
         color: #2b1055;
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
@@ -1040,10 +1040,10 @@ footer{
     }
     section img#logokon {
         /* right: -900px; */
-        left: -9px;
+        left: 30px;
         width: 1250px;
         height: 1250px;
-        transform: translateY(20px);
+        transform: translateY(-100px);
     }
     section img#giftt {
         width: auto;
@@ -1066,7 +1066,7 @@ footer{
         height: 00px;
     }
     section img#gift {
-        top: 10px;
+        top: -100px;
         width: 580px;
         margin-top: 60px;
         height: 580px;
